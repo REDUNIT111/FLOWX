@@ -426,9 +426,7 @@ input:focus {
         padding: 35px 15px;
 
     }
-    .dashboard-container {
-    grid-template-columns: 1fr 1fr;
-}
+    
 
     header h1 {
 
@@ -574,4 +572,21 @@ select:focus {
     margin-top: 10px;
     font-size: 32px;
     color: #111827;
+}
+
+@media screen and (max-width: 600px) {
+
+    #dashboard .dashboard-container {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+        width: 100%;
+    }
+
+    #dashboard .dashboard-card {
+        width: auto !important;
+        min-width: 0;
+        padding: 18px 8px;
+    }
+
 }

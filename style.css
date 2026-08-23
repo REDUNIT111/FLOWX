@@ -672,5 +672,5 @@ select:focus {
 #availableTransportBtn.active,
 #transportRequestsBtn.active {
     background-color: #01ffff;
-    color: white;
+    color: black;
 }

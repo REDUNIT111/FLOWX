@@ -658,3 +658,16 @@ select:focus {
         gap: 12px;
     }
 }
+/* Normal button */
+#sellInventoryBtn,
+#viewRequestsBtn {
+    transition: 0.2s ease;
+}
+
+/* Active button */
+#sellInventoryBtn.active,
+#viewRequestsBtn.active {
+    background-color: #2563eb;
+    color: white;
+    transform: translateY(-1px);
+}
